@@ -1,7 +1,7 @@
 class Student:
     college = ''
 
-    def __init__(self, name, age=None, marks=None, add=None):
+    def __init__(self, name, age=None, marks=None, add):
         self.name = name
         self.age = age
         self.marks = marks
