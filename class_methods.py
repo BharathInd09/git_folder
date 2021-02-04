@@ -97,3 +97,17 @@ c3 = MyClass()
 print(c1.static_method())
 
 ####################################
+# Another Static Method example
+
+class Exmap:
+    def __init__(self, name):
+        self.name = name
+
+    @staticmethod
+    def display(e):
+        e.name += 1000
+        return 'My name is {}'.format(e.name)
+
+
+e = Exmap(500)
+print(Exmap.display(e))
